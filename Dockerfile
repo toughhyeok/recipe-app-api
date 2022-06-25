@@ -4,7 +4,7 @@ LABEL maintainer="hotamul.com"
 # Python that you don't want to buffer the output
 ENV PYTHONUNBUFFERED 1
 
-COPY ./requirements.txt ./tmp/requirements.txt
+COPY ./requirements.txt /tmp/requirements.txt
 COPY ./app /app
 WORKDIR /app
 EXPOSE 8000
