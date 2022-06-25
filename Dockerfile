@@ -1,5 +1,6 @@
 FROM python:3.9-alpine3.13
-LABEL maintainer="hotamul.com"
+# The MAINTAINER command is deprecated
+LABEL maintainer="hotamul9@gmail.com"
 
 # Python that you don't want to buffer the output
 ENV PYTHONUNBUFFERED 1
