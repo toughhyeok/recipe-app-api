@@ -1,7 +1,6 @@
 """
 Tests for the user API.
 """
-import email
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.urls import reverse
@@ -73,6 +72,8 @@ class PublicUserApiTests(TestCase):
             'email': 'test@example.com',
             'password': 'test-user-password123',
         }
+
+        create_user(**user_details)
 
         payload = {
             'email': user_details['email'],
